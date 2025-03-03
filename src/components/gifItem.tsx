@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export const GifItem = ({ title, url, id }) => {
     return (
       <div className="card">
@@ -7,3 +9,7 @@ export const GifItem = ({ title, url, id }) => {
     );
   };
   
+  GifItem.propTypes = {
+      tittle : PropTypes.string.isRequired,
+      utl: PropTypes.string.isRequired
+  }
